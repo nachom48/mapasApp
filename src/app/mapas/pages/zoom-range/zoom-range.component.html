@@ -1,0 +1,24 @@
+<div #mapa class="mapa-container">
+
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <label class="form-label"> Zoom:      {{zoomLevel | number:'2.2'}}
+                              -Long,Lat: [{{center[0] | number:'2.4-4'}},{{center[1] | number:'2.4-4'}},]
+    </label>
+    <input type="range"
+           class="form-range"
+           id="customRange1"
+           [value]="zoomLevel"
+           min="0"
+           max="18"
+           (input)="zoomCambio(zoomInput.value)"
+           #zoomInput>
+           <!-- Lo pongo entre llaves cuadradas para q tome el valor del componente -->
+  </div>
+  <div class="col-12 botones">
+    <button class="btn btn-primary float-end" (click)="zoomOut()">-</button>
+    <button class="btn btn-primary" (click)="zoomIn()">+</button>
+  </div>
+</div>
