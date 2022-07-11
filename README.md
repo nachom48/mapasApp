@@ -2,7 +2,7 @@
 
 Frontend de una pagina que visualiza Mapas ,realizado con la liberia de MapBox en Angular. 
 
-Versión online [Aquí](https://computadorasmunoz.vercel.app/)
+Versión online [Aquí](https://vercel.com/nachom48/mapas-app)
 
 
 
